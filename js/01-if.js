@@ -39,3 +39,15 @@ console.log(1 < 2 ? 3 : 4);
 console.log(2 > 3 ? 4 : 5 ? 6 : 7);
 console.log(NaN ? 1 : 2);
 console.log(null ? 1 : 2);
+console.log(undefined ? 1 : 2);
+console.log([] ? 1 : 2);
+/*
+ternary pavyzdys kad lengviau suprast. grazina 5.
+0 
+    ? 1
+        ? 2
+        : 3
+    : 4
+        ? 5
+        : 6
+*/
