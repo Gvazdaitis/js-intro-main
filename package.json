@@ -4,6 +4,7 @@
   "description": "As someone wise once said: \r > ~~This~~ *is* **the** ***RGB*** <sub>value</sub> <sup>for</sup> green `#00FF00`.",
   "main": "index.js",
   "scripts": {
+    "02-20-dest": "node --watch js/02-20-dest.js",
     "02-20-loops": "node --watch js/02-20-loops.js",
     "02-19-spread": "node --watch js/02-19-spread.js",
     "02-19-ref": "node --watch js/02-19-ref.js",

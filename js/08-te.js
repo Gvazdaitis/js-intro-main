@@ -13,6 +13,7 @@ console.log(suma1);
 
 // Sprendimas su array metodu (reduce):
 // Jūsų kodas čia...
+console.log(numbers1.reduce((sum, num) => sum + num, 0));
 
 console.log("\n-----------\n");
 
@@ -32,6 +33,8 @@ console.log(count1);
 // Sprendimas su filter metodu:
 // Jūsų kodas čia...
 
+console.log(numbers2.filter((a) => a % 2 === 0).length);
+
 console.log("\n-----------\n");
 // =============================================
 // Užduotis 3: Rasti didžiausią skaičių masyve
@@ -40,7 +43,7 @@ const numbers3 = [10, 5, 20, 8, 15];
 
 // Sprendimas su for ciklu:
 // Jūsų kodas čia...
-let maxNum = -Infinity;
+let maxNum = numbers3[0];
 for (let i = 0; i < numbers3.length; i++) {
   if (numbers3[i] >= maxNum) maxNum = numbers3[i];
 }
@@ -92,6 +95,8 @@ console.log(tikTeigiami(numbers5));
 // Sprendimas su filter metodu:
 // Jūsų kodas čia...
 
+console.log(numbers5.filter((a) => a > 0));
+
 console.log("\n-----------\n");
 
 // =============================================
@@ -112,9 +117,14 @@ const elementuSandauga = (arr) => {
 
 console.log(elementuSandauga(numbers6));
 
-console.log("\n-----------\n");
 // Sprendimas su reduce metodu:
 // Jūsų kodas čia...
+const elementuSandauga2 = (arr) => {
+  return arr.reduce((a, b) => a * b, 1);
+};
+console.log(elementuSandauga2(numbers6));
+
+console.log("\n-----------\n");
 
 // =============================================
 // Užduotis 7: Apversti masyvą (sukurti naują apverstą masyvą)
@@ -130,6 +140,8 @@ const reverseArr = (arr) => {
   }
   return finalArr;
 };
+
+console.log(array7.unshift(100));
 console.log(reverseArr(array7));
 
 // Sprendimas su built-in reverse metodu (kopijuojame, kad nepakeistume originalo):
@@ -155,6 +167,8 @@ console.log(firstIndex(array8, searchElement));
 // Sprendimas su indexOf metodu:
 // Jūsų kodas čia...
 
+console.log(array8.indexOf(searchElement));
+
 console.log("\n-----------\n");
 
 // =============================================
@@ -176,6 +190,10 @@ console.log(isSorted(array9));
 
 // Sprendimas su every metodu:
 // Jūsų kodas čia...
+function isAsc(arr) {
+  return arr.every((a, b) => a <= b);
+}
+console.log(isAsc(array9));
 
 console.log("\n-----------\n");
 // =============================================
@@ -196,10 +214,10 @@ const squareElements = (arr) => {
 
 console.log(squareElements(numbers10));
 
-console.log("\n-----------\n");
-
 // Sprendimas su map metodu:
 // Jūsų kodas čia...
+console.log(numbers10.map((x) => x * x));
+console.log("\n-----------\n");
 
 // =============================================
 // Užduotis 11: Susumuoti tik nelyginius masyvo elementus
@@ -222,16 +240,20 @@ console.log(sumOdd(numbers11));
 // Sprendimas su filter ir reduce:
 // Jūsų kodas čia...
 
+console.log("\n-----------\n");
 // =============================================
 // Užduotis 12: Apskaičiuoti masyvo elementų vidurkį
 // =============================================
 const numbers12 = [10, 20, 30, 40, 50];
+console.log("12 uzd.");
 
 // Sprendimas su for ciklu:
 // Jūsų kodas čia...
 
 // Sprendimas su reduce:
 // Jūsų kodas čia...
+
+console.log(numbers12.reduce((a, b) => a + b) / numbers12.length);
 
 console.log("\n-----------\n");
 
@@ -256,6 +278,21 @@ const numbers14 = [5, 3, 9, 1, 7];
 
 // Sprendimas su for ciklu:
 // Jūsų kodas čia...
+
+let pirmasDidziausias = Number.MIN_VALUE;
+let antrasDidziausias = Number.MIN_VALUE;
+
+for (let i = 0; i < numbers14.length; i++) {
+  if (numbers14[i] > pirmasDidziausias) {
+    antrasDidziausias = pirmasDidziausias;
+    pirmasDidziausias = numbers14[i];
+  } else if (
+    numbers14[i] > antrasDidziausias &&
+    numbers14[i] !== antrasDidziausias
+  ) {
+    antrasDidziausias = numbers14[i];
+  }
+}
 
 // Sprendimas su sort metodu (kopijuojame, kad nepakeistume originalo):
 // Jūsų kodas čia...
