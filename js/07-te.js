@@ -55,7 +55,7 @@ const countChars2 = (str) => {
 const s1 = "Labas rytas, Lietuva";
 console.log(countChars2(s1), "\n -------\n");
 const s2 = "hello world";
-console.log(countChars(s2), "\n -------\n");
+console.log(countChars2(s2), "\n -------\n");
 
 // 6. Sukurkite funkciją, kuri priima skaičių ir grąžina "teigiamas", "neigiamas" arba "nulis" naudojant ternary.
 

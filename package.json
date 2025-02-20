@@ -4,6 +4,13 @@
   "description": "As someone wise once said: \r > ~~This~~ *is* **the** ***RGB*** <sub>value</sub> <sup>for</sup> green `#00FF00`.",
   "main": "index.js",
   "scripts": {
+    "02-20-loops": "node --watch js/02-20-loops.js",
+    "02-19-spread": "node --watch js/02-19-spread.js",
+    "02-19-ref": "node --watch js/02-19-ref.js",
+    "03-practise": "node --watch js/03-practise.js",
+    "02-18-objects": "node --watch js/02-18-objects.js",
+    "02-18-array-sort": "node --watch js/02-18-array-sort.js",
+    "te10": "node --watch js/10-te.js",
     "array:hof": "node --watch js/array-hof.js",
     "arrow": "node --watch js/arrow.js",
     "09:simuko:practice": "node --watch js/09-simuko-practice.js",
