@@ -323,18 +323,18 @@ const mergeArr1 = (arr1, arr2) => {
   return finalArr;
 };
 
-const mergeArr2 = (arr1, arr2) => [...arr1, ...arr2];
+const mergeArr = (arr1, arr2) => [...arr1, ...arr2];
 
 console.log(mergeArr1(arrayA, arrayB));
-console.log(mergeArr2(arrayA, arrayB));
-
-console.log("\n-----------\n");
+console.log(mergeArr(arrayA, arrayB));
 
 // Sprendimas su for ciklu:
 // Jūsų kodas čia...
 
 // Sprendimas su concat metodu:
 // Jūsų kodas čia...
+console.log(arrayA.concat(arrayB));
+console.log("\n-----------\n");
 
 // =============================================
 // Užduotis 17: Išlyginti (flatten) masyvą, kurio elementai yra masyvai (vieno lygmens)
@@ -407,9 +407,7 @@ function intersection(arr1, arr2) {
   }
   return finalArr;
 }
-
 console.log(intersection(arrA, arrB));
-
 // Sprendimas su filter:
 // Jūsų kodas čia...
 
@@ -430,6 +428,14 @@ function evenOdd() {}
 
 // Sprendimas su reduce:
 // Jūsų kodas čia...
+console.log(
+  numbers19.reduce(
+    (result, numberr) => (
+      result[numberr % 2 === 0 ? "odd" : "even"].push(numberr), result
+    ),
+    { odd: [], even: [] }
+  )
+);
 
 console.log("\n-----------\n");
 // =============================================
@@ -453,6 +459,8 @@ console.log(kumuotaSuma(numbers20));
 
 // Sprendimas su reduce:
 // Jūsų kodas čia...
+
+//console.log(numbers20.reduce());
 
 console.log("\n-----------\n");
 

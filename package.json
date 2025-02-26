@@ -4,6 +4,13 @@
   "description": "As someone wise once said: \r > ~~This~~ *is* **the** ***RGB*** <sub>value</sub> <sup>for</sup> green `#00FF00`.",
   "main": "index.js",
   "scripts": {
+    "02-26-letters": "node --watch js/02-26-letters.js",
+    "02-25-te01": "node --watch js/02-25-te01.js",
+    "02-24-mini": "node --watch js/02-24-mini.js",
+    "02-24-summary": "node --watch js/02-24-summary.js",
+    "02-24-te01": "node --watch js/02-24-te01.js",
+    "02-21-te01": "node --watch js/02-21-te01.js",
+    "04-practise": "node --watch js/04-practise.js",
     "02-20-dest": "node --watch js/02-20-dest.js",
     "02-20-loops": "node --watch js/02-20-loops.js",
     "02-19-spread": "node --watch js/02-19-spread.js",
